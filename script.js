@@ -14,8 +14,8 @@ function getRandomInt(min, max) {
     } else if (guessedNumber > randomNumber) {
         document.getElementById("ans").innerHTML = "The number is Smaller than you guessed";
     } else {
-        document.getElementById("ans").innerHTML="<b>CONGRATULATION</b>"
-        document.getElementById("score").innerHTML = `Your score is ${100 - count}`;
+         document.getElementById("ans").innerHTML=`<b>CONGRATULATION</b><br>Your score is ${100 - count}`;
+//         document.getElementById("score").innerHTML = `Your score is ${100 - count}`;
         randomNumber = getRandomInt(1, 100);
         count=0;
     }
